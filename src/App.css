@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Buda", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+header div{
+  background: rgba(20,20, 20,0.1);
+}
+.item{
+  box-shadow: 2px 2px 4px #f5f4f5;
+}
+.nav{
+  box-shadow: 2px 2px 4px grey;
+}
+.nav-icons button{
+  border: none;
+  background: inherit;
+  font-size: 15px;
+}
+.product{
+  margin: 10px 0;
+}
+.product:hover{
+  box-shadow: 1px 1px 2px darkgrey;
+  border-radius:5px ;
+}
+.quantity button{
+  background: none;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0.5px solid grey;
+}
+.review-div{
+  border-bottom: 1px solid grey;
+  margin: 5px 0;
+}
+.cart-btn button{
+  width: 200px;
+  padding: 8px;
+}
+input{
+  background: #f5f4f5;
+  box-sizing: border-box;
+}
+input::placeholder{
+  padding: 5px;
+  font-size: 13px;
+}
+.forget{
+  text-decoration-color: #32cd32;
+}
+.forget:hover{
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color:blue;
+}
+.active button:hover{
+  border-bottom: 1px solid #32cd32;
+  color: #32cd32;
+  padding-bottom: 3px;
+}
+footer{
+  background: rgba(20,20, 20,0.1);
+}
+
+@media screen and (max-width: 480px){
+.products{
+  grid-template-columns: repeat(2, 160px);
+}
+.product{
+  height: 300px;
+}
+}
